@@ -8,11 +8,11 @@ function formatData(data) {
   const { dogs, cats } = data;
   return [
     {
-      label: "dogs",
+      label: "Dogs",
       value: dogs,
     },
     {
-      label: "cats",
+      label: "Cats",
       value: cats,
     },
   ];
@@ -26,7 +26,7 @@ function drawGraph(data, mountNodeSelector = "#chart svg") {
       .pieChart()
       .x((d) => d.label)
       .y((d) => d.value)
-      .showLabels(true);
+      .showLabels(true)
 
     d3.select(mountNodeSelector)
       .datum(data)

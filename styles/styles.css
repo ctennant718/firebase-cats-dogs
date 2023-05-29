@@ -10,6 +10,17 @@ html {
 
 body {
   text-align: center;
+  font-family: monospace;
+  background-color: hsl(45, 90%, 88%);
+}
+
+button {
+  padding: 0.5em;
+  font-family: monospace;
+  font-weight: bold;
+  font-size: 1rem;
+  border-radius: 5%;
+  margin-block-start: 1em;
 }
 
 .page-header {
@@ -19,6 +30,18 @@ body {
 
 .page-title {
   margin: 0;
+  font-size: 2.5rem;
+}
+.page-subtitle {
+  font-size: 1.5rem;
+}
+
+@media (min-width: 425px) and (max-width: 768px) {
+  .chart-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .chart {
@@ -29,14 +52,33 @@ body {
 
 svg.nvd3-svg {
   min-height: 500px;
-  background-color: #efefef;
+  background-color: #ffe5b4;
   padding: 15px;
 }
 
 .nvd3 text {
-  font: normal 16px Arial;
+  font: normal 16px monospace;
 }
 
 .controls {
   padding: 15px;
+}
+
+.cats-button {
+  background-color: rgb(179, 198, 229);
+}
+
+.dogs-button {
+  background-color: rgb(59, 117, 175);
+  margin-inline-start: 0.5em;
+}
+
+.dogs-button:hover {
+  box-shadow: 0px 15px 20px rgb(59, 117, 175);
+  transform: translateY(-7px);
+}
+
+.cats-button:hover {
+  box-shadow: 0px 15px 20px rgb(179, 198, 229);
+  transform: translateY(-7px);
 }
