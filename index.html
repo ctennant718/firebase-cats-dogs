@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cats vs Dogs</title>
+  <link rel="stylesheet" href="https://cdn.rawgit.com/novus/nvd3/v1.8.1/build/nv.d3.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
+    integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+  <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="./styles/styles.css">
+
+
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/nvd3/1.8.5/nv.d3.min.js"></script>
+  <script defer src="https://www.gstatic.com/firebasejs/8.2.6/firebase-app.js"></script>
+  <script defer src="https://www.gstatic.com/firebasejs/8.2.6/firebase-firestore.js"></script>
+  <script defer src="./scripts/main.js"></script>
+</head>
+
+<body>
+  <header class="page-header">
+    <h1 class="page-title">Cats vs Dogs (FireStore)</h1>
+  </header>
+  <div id="chart" class="chart">
+    <svg></svg>
+  </div>
+  <div id="controls" class="controls">
+    <button class="btn btn-success" id="dogs">Dogs</button>
+    <button class="btn btn-warning" id="cats">Cats</button>
+    <!-- <button class="btn btn-danger" id="sad">Sad</button> -->
+  </div>
+
+</body>
+
+</html>
